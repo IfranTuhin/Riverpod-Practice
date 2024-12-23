@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_practice/feature/counter_app/screen/counter_app.dart';
+import 'package:riverpod_practice/feature/todo_app/screen/todo_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CounterApp(),
+      home: TodoScreen(),
     );
   }
 }
